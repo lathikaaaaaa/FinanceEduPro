@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3: Investing Basics</title>
+    <link rel="stylesheet" href="quiz.css">
+    
+    <!-- Google Translate Widget -->
+    <script type="text/javascript">
+        function loadGoogleTranslateElement() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'ta,en,te,bn,bh,hi,kn,ks,ml,mr,ne,pa,ur',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslateElement"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="C:/Users/DELL/OneDrive/Desktop/VIT Project/mainpage/FinanceEduPro-Photoroom.png" alt="FinanceEduPro Logo" class="logo" style="width: 100px; height: auto;">
+        <nav class="nav">
+            <a href="quiz7.html">Quiz 1</a>
+            <a href="quiz8.html">Quiz 2</a>
+            <a href="quiz9.html">Quiz 3</a>
+            <a href="results2.html">Results</a>
+        </nav>
+        
+        <!-- Google Translate Dropdown -->
+        <div id="google_translate_element" style="float: right;"></div>
+    </header>
+
+    <div class="container">
+        <h1>Quiz 3: Investing Basics</h1>
+        <div class="quiz-container" id="quiz-container"></div>
+        <button id="submit-quiz">Submit Quiz</button>
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the primary goal of investing?",
+                options: {
+                    a: "To lose money",
+                    b: "To grow wealth over time",
+                    c: "To spend all savings immediately",
+                    d: "To avoid any risk"
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Which investment is generally considered low-risk?",
+                options: {
+                    a: "Stocks",
+                    b: "Bonds",
+                    c: "Cryptocurrency",
+                    d: "Real Estate"
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Why is diversification important in investing?",
+                options: {
+                    a: "To increase the chance of losing money",
+                    b: "To spread risk and reduce potential losses",
+                    c: "To put all money into a single investment",
+                    d: "To avoid having multiple investments"
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "What is compound interest?",
+                options: {
+                    a: "Interest earned only on the initial principal",
+                    b: "Interest earned on both the initial principal and accumulated interest",
+                    c: "Interest charged on a loan",
+                    d: "Interest paid monthly"
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "What should be considered before making an investment?",
+                options: {
+                    a: "The color of the investment product",
+                    b: "The risk level and potential returns",
+                    c: "The popularity of the investment",
+                    d: "The current market trend"
+                },
+                correctAnswer: 'b'
+            }
+        ];
+
+        // Function to shuffle questions
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Shuffle questions
+        shuffleArray(questions);
+
+        // Display questions
+        const quizContainer = document.getElementById('quiz-container');
+        questions.forEach((q, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('quiz-question');
+            questionDiv.innerHTML = `
+                <label>${q.question}</label><br>
+                ${Object.keys(q.options).map(option => `
+                    <input type="radio" name="question${index}" value="${option}"> ${q.options[option]}<br>
+                `).join('')}
+                <div class="user-answer" style="display: none;"></div>
+                <div class="correct-answer" style="display: none; color: green;"></div>
+            `;
+            quizContainer.appendChild(questionDiv);
+        });
+
+        document.getElementById('submit-quiz').addEventListener('click', function() {
+            let score = 0;
+            const totalQuestions = questions.length;
+
+            questions.forEach((q, index) => {
+                const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`);
+                const correctDiv = quizContainer.children[index].querySelector('.correct-answer');
+                const userDiv = quizContainer.children[index].querySelector('.user-answer');
+                
+                // Clear previous displays
+                correctDiv.style.display = 'none';
+                correctDiv.innerHTML = '';
+                userDiv.style.display = 'none';
+                userDiv.innerHTML = '';
+
+                if (selectedAnswer) {
+                    // Display the user's answer
+                    userDiv.innerHTML = `Your Answer: ${selectedAnswer.value.toUpperCase()}`;
+                    userDiv.style.display = 'block'; // Show user's answer
+
+                    // Check if the answer is correct
+                    if (selectedAnswer.value === q.correctAnswer) {
+                        score++;
+                    }
+                } else {
+                    userDiv.innerHTML = 'Your Answer: None selected';
+                    userDiv.style.display = 'block'; // Show user's answer
+                }
+                
+                // Always show the correct answer
+                correctDiv.innerHTML = `Correct Answer: ${q.correctAnswer.toUpperCase()}`;
+                correctDiv.style.display = 'block'; // Show the correct answer
+            });
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `Your score: ${score} out of ${totalQuestions}`;
+
+            // Store score in local storage
+            localStorage.setItem('quiz9Score', score);
+        });
+    </script>
+</body>
+</html>

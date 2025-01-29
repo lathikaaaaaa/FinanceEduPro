@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management for Career and Life Balance</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00003e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #00003e;
+            color: #f4f4f4;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .language-select {
+            margin-left: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f4f4f4;
+            color: #00003e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+        </div>
+        <div class="header-title" id="header-title-en">WORKING PROFESSIONALS</div>
+        <div class="header-title" id="header-title-ta" style="display: none;">தொழிலாளர்</div>
+        <div class="nav-links">
+            <a href="#" id="profile-en">Profile</a>
+            <a href="#" id="profile-ta" style="display: none;">சுயவிவரம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-en">Progress</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta" style="display: none;">முன்னேற்றம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-en">Quiz</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta" style="display: none;">வினாடி வினா</a>
+            <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+                <option value="en" selected>English</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls>
+                <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\employed-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Content Section -->
+        <h2>Importance of Personal Finance Management for Career and Life Balance</h2>
+        <p>Effective personal finance management is crucial for maintaining a balance between career and personal life. By managing finances wisely, you can reduce stress, achieve financial stability, and ensure that both your professional and personal goals are supported. This balance allows you to focus on your career while also enjoying a fulfilling personal life.</p>
+        
+        <h2>Income Management</h2>
+        <p>Managing income involves strategically allocating it towards savings, expenses, and investments. Setting aside a portion of your income for savings and investments helps build financial security, while carefully planning your expenses ensures that you live within your means. This approach supports both short-term needs and long-term financial goals.</p>
+        
+        <h2>Budgeting Tools</h2>
+        <p>Budgeting apps and tools are essential for effective financial management. They help you create and stick to a budget, track your spending, and ensure that your financial goals are on track. These tools provide a clear overview of your financial situation, making it easier to manage your money and avoid overspending.</p>
+        
+        <h2>Expense Tracking</h2>
+        <p>Tracking your expenses is key to identifying unnecessary spending and making adjustments to your budget. Regularly reviewing your spending habits helps you find areas where you can cut back, ensuring that more of your income is directed towards savings and investments.</p>
+        
+        <h2>Work-Life Balance</h2>
+        <p>Managing your finances effectively supports both your professional goals and personal well-being. By balancing your income and expenses, you can reduce financial stress, allowing you to focus on your career while also enjoying your personal life. This balance is essential for long-term happiness and success.</p>
+    </div>
+
+    <script>
+        function handleLanguageChange() {
+            const languageSelect = document.getElementById('language-select');
+            const selectedLanguage = languageSelect.value;
+
+            if (selectedLanguage === 'ta') {
+                window.location.href = 'mod2wptam.html';
+            } else if (selectedLanguage === 'en') {
+                window.location.href = 'mod2wp.html'; // Assuming there's an English version of the page
+            }
+        }
+    </script>
+</body>
+</html>

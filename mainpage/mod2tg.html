@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Money Management and Its Importance for Young Adults</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00003e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+        </div>
+        <div class="header-title" id="header-title-en">TEENAGERS</div>
+        <div class="header-title" id="header-title-ta" style="display: none;">இளையோர்</div>
+        <div class="nav-links">
+            <a href="#" id="profile-en">Profile</a>
+            <a href="#" id="profile-ta" style="display: none;">சுயவிவரம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-en">Progress</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta" style="display: none;">முன்னேற்றம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-en">Quiz</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta" style="display: none;">வினாடி வினா</a>
+            <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+                <option value="en" selected>English</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content Box -->
+        <div class="content-box">
+            <!-- Video Embed -->
+            <video controls>
+                <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\teens-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Basics of Money Management and Its Importance for Young Adults</h2>
+            <p>Money management is a critical skill for young adults, setting the stage for financial success later in life. Understanding how to manage money—through budgeting, saving, and spending wisely—helps young adults build a strong financial foundation. Good money management habits formed early can lead to long-term financial stability and independence.</p>
+            
+            <h2>Allowance Budgeting</h2>
+            <p>Budgeting your allowance or part-time earnings is a practical way to learn money management. By allocating a portion of your income to savings, spending, and other needs, you can gain control over your finances. This practice helps develop discipline and ensures that you are prepared for both short-term expenses and future financial goals.</p>
+            
+            <h2>Saving for Goals</h2>
+            <p>Setting short-term financial goals, like saving for a gadget or college expenses, teaches the value of delayed gratification and planning. By saving consistently towards a goal, young adults learn the importance of setting priorities and making sacrifices to achieve what they want. This skill is essential for managing larger financial goals in the future.</p>
+            
+            <h2>Understanding Needs vs. Wants</h2>
+            <p>Differentiating between needs and wants is fundamental to responsible spending. Needs are essential expenses, such as food, housing, and education, while wants are non-essential items that can be deferred. Understanding this distinction helps young adults make informed spending decisions, ensuring that they live within their means and avoid unnecessary debt.</p>
+        </div>
+    </div>
+
+    <script>
+        function handleLanguageChange() {
+            const languageSelect = document.getElementById('language-select');
+            const selectedLanguage = languageSelect.value;
+
+            if (selectedLanguage === 'ta') {
+                window.location.href = 'mod2tgtam.html';
+            } else if (selectedLanguage === 'en') {
+                window.location.href = 'mod2tg.html'; // Assuming there's an English version of the page
+            }
+        }
+    </script>
+</body>
+</html>

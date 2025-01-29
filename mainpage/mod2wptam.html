@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தனிப்பட்ட நிதி மேலாண்மை</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00003e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #00003e;
+            color: #f4f4f4;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .language-select {
+            margin-left: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f4f4f4;
+            color: #00003e;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+        </div>
+        <div class="header-title" id="header-title-ta">தொழிலாளர்</div>
+        <div class="nav-links">
+            <a href="#" id="profile-ta">சுயவிவரம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta">முன்னேற்றம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta">வினாடி வினா</a>
+            <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+                <option value="en">English</option>
+                <option value="ta" selected>தமிழ்</option>
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls>
+                <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\employedtam-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Content Section -->
+        <h2>தனிப்பட்ட நிதி மேலாண்மை:</h2>
+        <p>தனிப்பட்ட நிதி மேலாண்மை வேலை மற்றும் வாழ்க்கை சமநிலையை பேண உதவுகிறது. பணத்தை நன்றாக நிர்வகிப்பது மூலம் மன அழுத்தம் குறைந்து நிதி நிலைத்தன்மையை அடையலாம்.</p>
+
+        <h2>வருமான மேலாண்மை:</h2>
+        <p>வருமானத்தை சேமிப்பு, செலவுகள், முதலீடுகள் என திட்டமிட்டு ஒதுக்குவது முக்கியம். இது குறுகிய கால தேவைகளுக்கும் நீண்டகால நிதி இலக்குகளுக்கும் உதவுகிறது.</p>
+
+        <h2>வழிமுறைகள் மற்றும் கருவிகள்:</h2>
+        <p>விளைவு முறைகளைப் பயன்படுத்தி உங்கள் செலவுகளை கண்காணிக்கவும், உங்கள் நிதி நிலையை தெளிவாக புரிந்துகொள்ளவும் முடியும்.</p>
+
+        <h2>செலவு கண்காணிப்பு:</h2>
+        <p>அவசியமற்ற செலவுகளைப் புரிந்து, அவற்றை குறைத்தல் மூலம் உங்கள் நிதி இலக்குகளுக்கு அதிகமாக பணத்தை ஒதுக்க முடியும்.</p>
+
+        <h2>வேலை-வாழ்க்கை சமநிலை:</h2>
+        <p>சமவெளியில் பணத்தைச் செலவழித்து உங்கள் வாழ்க்கையின் சக்தியை வலுவாக வைத்துக் கொள்ள முடியும்.</p>
+    </div>
+
+    <script>
+        function handleLanguageChange() {
+            const languageSelect = document.getElementById('language-select');
+            const selectedLanguage = languageSelect.value;
+
+            if (selectedLanguage === 'ta') {
+                window.location.href = 'mod2wptam.html';
+            } else if (selectedLanguage === 'en') {
+                window.location.href = 'mod2wp.html'; // Assuming there's an English version of the page
+            }
+        }
+    </script>
+</body>
+</html>
