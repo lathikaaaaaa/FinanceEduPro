@@ -1,0 +1,163 @@
+body {
+    background-color: #00003e;
+    color: white;
+    font-family: garamond, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: darkblue;
+    position: relative;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .header-title {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00003e;
+}
+
+header .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: #00003e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .nav-links a:hover {
+    color: #00005e;
+}
+
+.language-select {
+    background-color: #00003e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: garamond, sans-serif;
+    font-size: 18px; 
+    height: 100%; 
+    align-items: center; 
+}
+
+.description {
+    padding: 20px;
+    background-color: #00003e;
+    color: white;
+    text-align: center;
+}
+
+.category-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    background-color: white;
+    color: #00003e;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category h2 {
+    margin-top: 15px;
+}
+
+.category p {
+    margin: 10px 0;
+}
+
+.category:hover {
+    background-color: #00005e;
+    color: white;
+}
+.virtual-assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.virtual-assistant button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.virtual-assistant img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.virtual-assistant img:hover {
+    transform: scale(1.1);
+}
+
+.chatbot-container {
+    display: none; /* Hide the chatbot initially */
+    position: fixed;
+    bottom: 80px; /* Position above the assistant icon */
+    right: 20px;
+    width: 425px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+    .category-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .logo, header .header-title {
+        font-size: 20px;
+    }
+}

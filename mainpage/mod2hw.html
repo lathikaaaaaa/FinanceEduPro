@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Household Finances Effectively</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: Garamond, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Added margin to separate content sections */
+        }
+        h2 {
+            color: #00003e;
+            margin-top: 0; /* Removed top margin */
+            margin-bottom: 15px; /* Added bottom margin */
+        }
+        p {
+            margin-bottom: 15px; /* Increased margin for better spacing */
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #00003e; /* Added background color for header */
+            padding: 10px 20px; /* Added padding */
+            color: white; /* Changed text color to white */
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white; /* Changed link color to white */
+        }
+        .language-select {
+            margin-left: 20px; /* Added margin to separate from other links */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+    </div>
+    <div class="header-title" id="header-title-en">HOME MAKERS</div>
+    <div class="header-title" id="header-title-ta" style="display: none;">இல்லத்தரசி</div>
+    <div class="nav-links">
+        <a href="#" id="profile-en">Profile</a>
+        <a href="#" id="profile-ta" style="display: none;">சுயவிவரம்</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-en">Progress</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta" style="display: none;">முன்னேற்றம்</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-en">Quiz</a>
+        <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta" style="display: none;">வினாடி வினா</a>
+        <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+            <option value="en" selected>English</option>
+            <option value="ta">தமிழ்</option>
+        </select>
+    </div>
+</header>
+<div class="container">
+    <!-- Video Section -->
+    <div class="content-box">
+        <video controls>
+            <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\housewife-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-box">
+        <h2>Managing Household Finances Effectively</h2>
+        <p>Effective management of household finances is crucial for maintaining financial stability and achieving long-term goals. It involves budgeting, saving, and tracking expenses to ensure that all financial obligations are met while working towards financial goals. Proper financial management helps prevent debt, supports savings, and enhances overall financial well-being.</p>
+        
+        <h2>Household Budgeting</h2>
+        <p>Creating a monthly budget is essential for managing household expenses. Start by listing all sources of income and categorizing expenses, such as housing, utilities, groceries, and entertainment. Allocate specific amounts to each category and track spending to ensure you stay within your budget. Regularly reviewing and adjusting your budget helps maintain control over your finances and adjust to any changes in income or expenses.</p>
+        
+        <h2>Saving Strategies</h2>
+        <p>Saving on recurring costs, like groceries and utilities, can significantly impact your overall budget. Tips include planning meals and shopping with a list to avoid impulse buys, using coupons, and taking advantage of sales. For utilities, consider energy-saving practices, like turning off lights when not in use and adjusting thermostat settings. Implementing these strategies helps reduce expenses and frees up money for other financial goals.</p>
+        
+        <h2>Managing Family Expenses</h2>
+        <p>Ensuring all family needs are met within the budget involves effective planning and communication. Prioritize essential expenses, such as housing and healthcare, and allocate funds for discretionary spending based on family needs. Regularly review family expenses, involve all members in budgeting discussions, and adjust as needed to accommodate changing circumstances. This approach helps balance family needs with financial goals and maintains household financial stability.</p>
+    </div>
+</div>
+<script>
+    function handleLanguageChange() {
+        const languageSelect = document.getElementById('language-select');
+        const selectedLanguage = languageSelect.value;
+
+        if (selectedLanguage === 'ta') {
+            window.location.href = 'mod2hwtam.html';
+        } else if (selectedLanguage === 'en') {
+            window.location.href = 'mod2hw.html'; // Assuming there's an English version of the page
+        }
+    }
+</script>
+</body>
+</html>

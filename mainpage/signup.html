@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDxVjHwxUfZOgAy69WI55UzAYKql0Hm0Ts",
+            authDomain: "login-334d3.firebaseapp.com",
+            projectId: "login-334d3",
+            storageBucket: "login-334d3.appspot.com",
+            messagingSenderId: "547624729293",
+            appId: "1:547624729293:web:e99886a30a3ed9e58f4784",
+            measurementId: "G-YKZDHL1Z15"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        // Handle signup
+        window.signUp = async (event) => {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                alert('Signup successful! Welcome, ' + user.email);
+                // Redirect to login page or another page
+                window.location.href = 'login.html';
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        };
+    </script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslateElement"></script>
+<script type="text/javascript">
+    function loadGoogleTranslateElement() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'ta,en,te,bn,bh,hi,kn,ks,ml,mr,ne,pa,ur',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    function saveLanguagePreference() {
+        const langSelect = document.querySelector('.goog-te-combo');
+        if (langSelect) {
+            langSelect.addEventListener('change', function() {
+                const selectedLanguage = langSelect.value;
+                localStorage.setItem('selectedLanguage', selectedLanguage);
+            });
+        }
+    }
+
+    function applySavedLanguage() {
+        const savedLanguage = localStorage.getItem('selectedLanguage');
+        if (savedLanguage) {
+            const langSelect = document.querySelector('.goog-te-combo');
+            if (langSelect) {
+                langSelect.value = savedLanguage;
+                langSelect.dispatchEvent(new Event('change'));
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        loadGoogleTranslateElement();
+        saveLanguagePreference();
+        applySavedLanguage();
+    });
+</script>
+
+</head>
+<body>
+    <div class="signup-container">
+        <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="FinanceEduPro Logo" class="logo" style="width: 125px; height: auto;">
+        <h2>Create Your Account</h2>
+        <form id="signupForm" onsubmit="signUp(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <small class="error-message" id="usernameError"></small>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message" id="emailError"></small>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePassword()">Show</span>
+                <div class="password-strength" id="passwordStrength"></div>
+                <small class="error-message" id="passwordError"></small>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <small class="error-message" id="confirmPasswordError"></small>
+            </div>
+            <div class="input-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

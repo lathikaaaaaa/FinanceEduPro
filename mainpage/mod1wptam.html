@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Financial Management</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00003e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #00003e;
+            color: #f4f4f4;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: center;
+            color: #f4f4f4;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .language-select {
+            margin-left: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f4f4f4;
+            color: #00003e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+        </div>
+        <div class="header-title" id="header-title-en" style="display: none;">WORKING PROFESSIONALS</div>
+        <div class="header-title" id="header-title-ta">தொழிலாளர்</div>
+        <div class="nav-links">
+            <a href="#" id="profile-en" style="display: none;">Profile</a>
+            <a href="#" id="profile-ta">சுயவிவரம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-en" style="display: none;">Progress</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta">முன்னேற்றம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-en" style="display: none;">Quiz</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta">வினாடி வினா</a>
+            <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+                <option value="en">English</option>
+                <option value="ta" selected>தமிழ்</option>
+            </select>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content-box">
+            <video controls>
+                <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\employed-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2>பண மேலாண்மையின் முக்கியத்துவம்:</h2>
+            <p>பண மேலாண்மை என்பது சிறந்த வாழ்க்கையை அமைத்துக்கொள்ள நிதி நிலைமையைப் பராமரிப்பது. இது திட்டமிடல், ஒழுங்கமைப்பு மற்றும் கடன் நிர்வாகம் ஆகியவற்றை உள்ளடக்கியது. இது நிதி சுதந்திரத்தை அடைவதற்கு முக்கியமானது.</p>
+            
+            <h2>அழகுக் கணக்கீடு:</h2>
+            <p>நீங்கள் செலவுகளை கணக்கீடு செய்வது முக்கியமானது. உங்கள் தொகுப்புகளை சேமிப்புகளை மற்றும் செலவுகளை திட்டமிட்டு நிர்வகிக்கப்படுகின்றது. இது உங்கள் வாழ்க்கையைச் சிறப்பாக நடத்த உதவும்.</p>
+            
+            <h2>நோக்குகளுக்காக சேமித்தல்:</h2>
+            <p>சிறிய நோக்குகளுக்காக சேமிக்க வேண்டும். இது உங்கள் பெரிய நோக்குகளை அடைவதற்கு உதவுகிறது. ஒவ்வொரு மாதமும் ஒரு தொகையைத் திட்டமிட்டு சேமிக்கவும்.</p>        
+            
+            <h2>தேவைகள் மற்றும் விருப்பங்களை புரிதல்:</h2>
+            <p>தேவைகள் மற்றும் விருப்பங்களை புரிந்து கொள்ள வேண்டும். முக்கியமான தேவைகளை முதலில் முன்னுரிமையிட வேண்டும். விருப்பங்களை பின்னர் நிறைவேற்றலாம்.</p>
+            
+            <h2>முறையான செலவுகளைத் தவிர்த்தல்:</h2>
+            <p>உங்கள் பணத்தை முறையாக செலவழிக்காவிட்டால் நிதி சிக்கல்களை எதிர்கொள்ள நேரிடும். ஆகவே செலவுகளைத் திட்டமிடுதல் முக்கியமானது.</p>
+        </div>
+    </div>
+
+    <script>
+        function handleLanguageChange() {
+            const languageSelect = document.getElementById('language-select');
+            const selectedLanguage = languageSelect.value;
+
+            if (selectedLanguage === 'ta') {
+                window.location.href = 'mod1wptam.html';
+            } else if (selectedLanguage === 'en') {
+                window.location.href = 'mod1wp.html'; // Assuming there's an English version of the page
+            }
+        }
+    </script>
+</body>
+</html>

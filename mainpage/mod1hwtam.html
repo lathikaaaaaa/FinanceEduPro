@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Financial Planning for Teens</title>
+    <link rel="stylesheet" href="cat.css">
+    <style>
+        body {
+            font-family: garamond, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00003e;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #00003e;
+            color: #f4f4f4;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            text-align: center;
+            color: #f4f4f4;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .language-select {
+            margin-left: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f4f4f4;
+            color: #00003e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\DELL\OneDrive\Desktop\VIT Project\mainpage\FinanceEduPro-Photoroom.png" alt="Finance Edu Pro">
+        </div>
+        <div class="header-titles">
+            <div class="header-title" id="header-title-en">HOME MAKERS</div>
+            <div class="header-title" id="header-title-ta" style="display: none;">இல்லத்தரசி</div>
+        </div>
+        <div class="nav-links">
+            <a href="#" id="profile-en">Profile</a>
+            <a href="#" id="profile-ta" style="display: none;">சுயவிவரம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-en">Progress</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\progress2.html" id="progress-ta" style="display: none;">முன்னேற்றம்</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-en">Quiz</a>
+            <a href="C:\Users\DELL\OneDrive\Desktop\VIT Project\quizz\quiz7.html" id="quiz-ta" style="display: none;">வினாடி வினா</a>
+            <select class="language-select" id="language-select" onchange="handleLanguageChange()">
+                <option value="en" selected>English</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls>
+                <source src="C:\Users\DELL\OneDrive\Desktop\VIT Project\videos\housewifetam-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Content Section -->
+        <h2>நிதி திட்டமிடலின் அடிப்படைகள்:</h2>
+        <p>இளம் பருவத்திலேயே நிதியைச் செம்மையாகக் கட்டுப்படுத்துவது முக்கியம். இது குறுகிய மற்றும் நீண்டகால இலக்குகளை அடைய உதவுகிறது.பட்ஜெட் அமைத்தல், சேமிப்பு, முதலீடு போன்ற நிதி பழக்கவழக்கங்களை உருவாக்குவது எதிர்கால நிதி நிலைத்தன்மைக்கும் வெற்றிக்கும் அடிப்படையாக இருக்கும்.</p>
+        
+        <h2>நோக்குகளை அமைத்தல்:</h2>
+        <p>நிதி நோக்குகளை அமைத்தல் உங்கள் இலக்குகளை அடைய உதவுகிறது. புதிய சாதனத்தை வாங்குதல், கல்லூரிக்குப் பணம் சேமித்தல் போன்றவற்றிற்காக இலக்குகளை நிர்ணயித்து, அவற்றை அடைய சரியான திட்டமிடலை உருவாக்குங்கள். உங்கள் இலக்குகளைத் தற்காலிகமாக மதிப்பீடு செய்து, அவற்றைச் சரிசெய்து முன்னேறுங்கள்.</p>
+        
+        <h2>எதிர்காலத்திற்கு சேமித்தல்:</h2>
+        <p>முன்னரே சேமிக்கத் தொடங்குவது எதிர்கால தேவைகளுக்காகப் பணம் சேர்க்க உதவும். சிறிய அளவு பணத்தைப் பிரதானமாகச் சேமிக்க ஆரம்பித்தல் நிதி சுதந்திரத்தை அடைய உதவும். கல்லூரி, கார் போன்ற பெரிய செலவுகளுக்குப் பணம் சேமிக்க இதுவே வழி.</p>        
+        
+        <h2>காப்பீடு பற்றி புரிதல்:</h2>
+        <p>காப்பீடு என்பது எதிர்பாராத நிகழ்வுகளின் செலவுகளைச் சமாளிக்க உதவும் நிதி பாதுகாப்பாகும். மருத்துவ அவசரங்கள் அல்லது சொத்து சேதம் போன்றவற்றின் செலவுகளை காப்பீடு மூலம் நிவர்த்தி செய்யலாம். காப்பீடு பற்றிய அடிப்படைகளைப் புரிந்துகொள்வது, உங்களுக்கான சரியான பாதுகாப்பைத் தேர்ந்தெடுக்க உதவுகிறது.</p>
+        
+        <h2>அவசர நிதி உருவாக்குதல்:</h2>
+        <p>அவசரச் செலவுகளைச் சமாளிக்க அவசர நிதியை உருவாக்குவது அவசியமானது. மூன்று முதல் ஆறு மாத செலவுகளுக்கு நிகராக நிதியைச் சேமிக்க முயலுங்கள். இதைச் செய்து, எதிர்பாராத நிதி சிக்கல்களைத் தவிர்க்க முடியும்.</p>
+    </div>
+</body>
+</html>
