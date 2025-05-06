@@ -30,13 +30,6 @@ We've split our walkthrough/demo videos into three parts based on user groups:
 
 ---
 
-## Contribute / Collaborate
-
-Want to suggest content, improve design, or localize it for your region?  
-Open a pull request or shoot us a message. Let's build a financially literate future together.
-
----
-
 ## License
 
 This project is open-source under the [MIT License](LICENSE).
