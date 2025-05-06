@@ -24,7 +24,7 @@ We've split our walkthrough/demo videos into three parts based on user groups:
 
 ## Tech Stack
 
-- **HTML, CSS, JavaScript**
+- **HTML, CSS, JavaScript, Ruby, Python**
 - Responsive design for all screen sizes
 - Video integration via Google Drive
 
