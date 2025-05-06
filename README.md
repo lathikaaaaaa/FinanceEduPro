@@ -8,7 +8,7 @@ This platform is uniquely tailored to meet the needs of:
 - **Teenagers**
 - **Housewives**
 
-Each track contains 5 beginner-friendly, lifestyle-based modules covering the **basics of financial literacy and technology** — because every woman deserves to be financially fearless 💪
+Each track contains 5 beginner-friendly, lifestyle-based modules covering the **basics of financial literacy and technology** — because every woman deserves to be financially fearless!
 
 ---
 
@@ -34,13 +34,6 @@ We've split our walkthrough/demo videos into three parts based on user groups:
 
 Want to suggest content, improve design, or localize it for your region?  
 Open a pull request or shoot us a message. Let's build a financially literate future together.
-
----
-
-## Contact
-
-For feedback or collab ideas:  
-📧 lathikavetri26@gmail.com
 
 ---
 
