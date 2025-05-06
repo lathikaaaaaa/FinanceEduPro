@@ -1,0 +1,147 @@
+version: "3.1"
+
+stories:
+  - story: handle greetings
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: handle goodbyes
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: budgeting advice
+    steps:
+      - intent: ask_budget
+      - action: utter_ask_budget
+
+  - story: investment advice
+    steps:
+      - intent: ask_investment
+      - action: utter_ask_investment
+
+  - story: savings advice
+    steps:
+      - intent: ask_savings
+      - action: utter_ask_savings
+
+  - story: credit score information
+    steps:
+      - intent: ask_credit_score
+      - action: utter_ask_credit_score
+
+  - story: debt management tips
+    steps:
+      - intent: ask_debt_management
+      - action: utter_ask_debt_management
+
+  - story: retirement planning advice
+    steps:
+      - intent: ask_retirement
+      - action: utter_ask_retirement
+
+  - story: insurance advice
+    steps:
+      - intent: ask_insurance
+      - action: utter_ask_insurance
+
+  - story: tax information
+    steps:
+      - intent: ask_taxes
+      - action: utter_ask_taxes
+
+  - story: financial planning guidance
+    steps:
+      - intent: ask_financial_planning
+      - action: utter_ask_financial_planning
+
+  - story: salary negotiation tips
+    steps:
+      - intent: ask_salary_negotiation
+      - action: utter_ask_salary_negotiation
+
+  - story: compound interest explanation
+    steps:
+      - intent: ask_compound_interest
+      - action: utter_ask_compound_interest
+
+  - story: estate planning advice
+    steps:
+      - intent: ask_estate_planning
+      - action: utter_ask_estate_planning
+
+  - story: setting financial goals
+    steps:
+      - intent: ask_financial_goals
+      - action: utter_ask_financial_goals
+
+  - story: achieving financial independence
+    steps:
+      - intent: ask_financial_independence
+      - action: utter_ask_financial_independence
+
+  - story: finance tips for working women
+    steps:
+      - intent: ask_working_women_finance
+      - action: utter_ask_working_women_finance
+
+  - story: financial advice for housewives
+    steps:
+      - intent: ask_housewife_finance
+      - action: utter_ask_housewife_finance
+
+  - story: financial guidance for girl students
+    steps:
+      - intent: ask_girl_student_finance
+      - action: utter_ask_girl_student_finance
+
+  - story: handling user doubts
+    steps:
+      - intent: ask_doubt
+      - action: utter_ask_doubt
+
+  - story: emergency fund tips
+    steps:
+      - intent: ask_emergency_fund
+      - action: utter_ask_emergency_fund
+
+  - story: student loan management
+    steps:
+      - intent: ask_student_loans
+      - action: utter_ask_student_loans
+
+  - story: credit card management tips
+    steps:
+      - intent: ask_credit_card_management
+      - action: utter_ask_credit_card_management
+
+  - story: personal loan information
+    steps:
+      - intent: ask_personal_loans
+      - action: utter_ask_personal_loans
+
+  - story: real estate investment advice
+    steps:
+      - intent: ask_real_estate_investment
+      - action: utter_ask_real_estate_investment
+
+  - story: retirement account details
+    steps:
+      - intent: ask_retirement_accounts
+      - action: utter_ask_retirement_accounts
+
+  - story: tips for early savers
+    steps:
+      - intent: ask_tips_for_early_savers
+      - action: utter_ask_tips_for_early_savers
+
+  - story: impact of inflation
+    steps:
+      - intent: ask_impact_of_inflation
+      - action: utter_ask_impact_of_inflation
+
+  - story: financial scams prevention
+    steps:
+      - intent: ask_financial_scams
+      - action: utter_ask_financial_scams

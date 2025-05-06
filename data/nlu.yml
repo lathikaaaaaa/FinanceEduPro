@@ -1,0 +1,178 @@
+
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Good morning
+      - Hey
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - See you later
+      - Bye
+
+  - intent: ask_budget
+    examples: |
+      - What is budgeting?
+      - How do I create a budget?
+      - Tell me about budgeting
+
+  - intent: ask_investment
+    examples: |
+      - What are investments?
+      - How can I start investing?
+      - Tell me about investments
+
+  - intent: ask_savings
+    examples: |
+      - What is savings?
+      - How should I save money?
+      - Tell me about savings
+
+  - intent: ask_credit_score
+    examples: |
+      - What is a credit score?
+      - How can I check my credit score?
+      - Tell me about credit scores
+
+  - intent: ask_debt_management
+    examples: |
+      - How can I manage my debt?
+      - What are some debt management strategies?
+      - Tell me about managing debt
+
+  - intent: ask_retirement
+    examples: |
+      - What is retirement planning?
+      - How do I prepare for retirement?
+      - Tell me about retirement
+
+  - intent: ask_insurance
+    examples: |
+      - What is insurance?
+      - How does insurance work?
+      - Tell me about insurance
+
+  - intent: ask_taxes
+    examples: |
+      - What are taxes?
+      - How can I optimize my taxes?
+      - Tell me about taxes
+
+  - intent: ask_financial_planning
+    examples: |
+      - What is financial planning?
+      - How do I create a financial plan?
+      - Tell me about financial planning
+
+  - intent: ask_salary_negotiation
+    examples: |
+      - How do I negotiate my salary?
+      - What should I consider when negotiating salary?
+      - Tell me about salary negotiation
+
+  - intent: ask_compound_interest
+    examples: |
+      - What is compound interest?
+      - How does compound interest work?
+      - Tell me about compound interest
+
+  - intent: ask_estate_planning
+    examples: |
+      - What is estate planning?
+      - How do I plan my estate?
+      - Tell me about estate planning
+
+  - intent: ask_financial_goals
+    examples: |
+      - What are financial goals?
+      - How do I set financial goals?
+      - Tell me about financial goals
+
+  - intent: ask_financial_independence
+    examples: |
+      - What is financial independence?
+      - How can I achieve financial independence?
+      - Tell me about financial independence
+
+  - intent: ask_working_women_finance
+    examples: |
+      - What financial advice is there for working women?
+      - How can working women manage their finances?
+      - What should working women consider in financial planning?
+
+  - intent: ask_housewife_finance
+    examples: |
+      - What financial tips are there for housewives?
+      - How can housewives manage household finances?
+      - What should housewives know about budgeting and savings?
+
+  - intent: ask_girl_student_finance
+    examples: |
+      - What should girl students know about managing money?
+      - How can girl students budget for their expenses?
+      - What financial advice is there for girl students?
+
+  - intent: ask_doubt
+    examples: |
+      - I have a doubt
+      - I need help
+      - Can you assist me?
+
+  - intent: ask_emergency_fund
+    examples: |
+      - What is an emergency fund?
+      - How much should I save in an emergency fund?
+      - Tell me about emergency funds
+
+  - intent: ask_student_loans
+    examples: |
+      - What are student loans?
+      - How do I manage my student loans?
+      - Tell me about student loans
+
+  - intent: ask_credit_card_management
+    examples: |
+      - How should I manage my credit cards?
+      - What are some tips for credit card management?
+      - Tell me about credit card management
+
+  - intent: ask_personal_loans
+    examples: |
+      - What are personal loans?
+      - How do personal loans work?
+      - Tell me about personal loans
+
+  - intent: ask_real_estate_investment
+    examples: |
+      - What is real estate investment?
+      - How can I invest in real estate?
+      - Tell me about real estate investment
+
+  - intent: ask_retirement_accounts
+    examples: |
+      - What are retirement accounts?
+      - How do retirement accounts work?
+      - Tell me about retirement accounts
+
+  - intent: ask_tips_for_early_savers
+    examples: |
+      - What are tips for early savers?
+      - How can I start saving early?
+      - Tell me about saving early
+
+  - intent: ask_impact_of_inflation
+    examples: |
+      - How does inflation affect my finances?
+      - What is the impact of inflation on savings?
+      - Tell me about inflation and its effects
+
+  - intent: ask_financial_scams
+    examples: |
+      - What are financial scams?
+      - How can I avoid financial scams?
+      - Tell me about financial scams

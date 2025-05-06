@@ -1,0 +1,77 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Handle user farewell
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Respond to doubt inquiry
+    steps:
+      - intent: ask_doubt
+      - action: utter_ask_doubt
+
+  - rule: Provide financial tips for working women
+    steps:
+      - intent: ask_working_women_finance
+      - action: utter_ask_working_women_finance
+
+  - rule: Provide financial advice for housewives
+    steps:
+      - intent: ask_housewife_finance
+      - action: utter_ask_housewife_finance
+
+  - rule: Provide financial guidance for girl students
+    steps:
+      - intent: ask_girl_student_finance
+      - action: utter_ask_girl_student_finance
+
+  - rule: Provide emergency fund advice
+    steps:
+      - intent: ask_emergency_fund
+      - action: utter_ask_emergency_fund
+
+  - rule: Provide student loan information
+    steps:
+      - intent: ask_student_loans
+      - action: utter_ask_student_loans
+
+  - rule: Provide credit card management tips
+    steps:
+      - intent: ask_credit_card_management
+      - action: utter_ask_credit_card_management
+
+  - rule: Provide personal loan details
+    steps:
+      - intent: ask_personal_loans
+      - action: utter_ask_personal_loans
+
+  - rule: Provide real estate investment advice
+    steps:
+      - intent: ask_real_estate_investment
+      - action: utter_ask_real_estate_investment
+
+  - rule: Provide retirement account details
+    steps:
+      - intent: ask_retirement_accounts
+      - action: utter_ask_retirement_accounts
+
+  - rule: Provide tips for early savers
+    steps:
+      - intent: ask_tips_for_early_savers
+      - action: utter_ask_tips_for_early_savers
+
+  - rule: Provide information on inflation impact
+    steps:
+      - intent: ask_impact_of_inflation
+      - action: utter_ask_impact_of_inflation
+
+  - rule: Provide advice on financial scams
+    steps:
+      - intent: ask_financial_scams
+      - action: utter_ask_financial_scams
